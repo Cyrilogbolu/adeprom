@@ -164,12 +164,14 @@ function Home() {
         <div className="container-page grid md:grid-cols-2 gap-10 items-center">
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-primary">Service Area</p>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-brand-deep">Serving Motherwell & Surrounding Areas</h2>
-            <p className="mt-4 text-muted-foreground">We proudly offer cleaning services across Motherwell and nearby areas in Scotland.</p>
+            <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-brand-deep">Serving Motherwell, Scotland & Beyond</h2>
+            <p className="mt-4 text-muted-foreground">Based in Motherwell, we proudly serve clients across Scotland — and we're happy to take on jobs outside our immediate location too. Get in touch wherever you are.</p>
             <ul className="mt-6 space-y-2 text-foreground">
-              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Motherwell</li>
-              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Nearby areas in Scotland</li>
+              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Motherwell (home base)</li>
+              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Across Scotland</li>
+              <li className="flex items-center gap-2"><MapPin className="h-4 w-4 text-primary" /> Available for jobs further afield — just ask</li>
             </ul>
+
           </div>
           <div className="card-elevated p-2 overflow-hidden">
             <iframe
