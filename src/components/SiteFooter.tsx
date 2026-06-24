@@ -20,13 +20,13 @@ export function SiteFooter() {
             Professional residential and commercial cleaning across Motherwell, Scotland and beyond. Spotless results, every time.
           </p>
           <div className="mt-5 flex items-center gap-3">
-            <a href="https://facebook.com/adeprom" target="_blank" rel="noopener" aria-label="Facebook" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+            <a href="https://www.facebook.com/profile.php?id=61591572170592" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
               <Facebook className="h-5 w-5" />
             </a>
-            <a href="https://instagram.com/adeprom" target="_blank" rel="noopener" aria-label="Instagram" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+            <a href="https://www.instagram.com/AdeProm1" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="https://tiktok.com/@adeprom" target="_blank" rel="noopener" aria-label="TikTok" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+            <a href="https://www.tiktok.com/@Adepromcleaning" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
               <TikTokIcon className="h-5 w-5" />
             </a>
           </div>
