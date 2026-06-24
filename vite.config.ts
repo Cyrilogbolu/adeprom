@@ -4,9 +4,8 @@ import { nitro } from "nitro/vite";
 export default defineConfig({
   vite: {
     plugins: [
-      nitro({
-        preset: "vercel",
-      }),
-    ],
+      // Only injects the Vercel plugin if Vercel is building the project
+      process.env.VERCEL ? nitro({ preset: "vercel" }) : null
+    ].filter(Boolean),
   },
 });
