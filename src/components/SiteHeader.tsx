@@ -19,7 +19,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container-page flex items-center justify-between py-3">
         <Link to="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <img src="/adeprom-logo.png" alt="AdeProm Cleaning Services" className="h-12 w-auto" width={48} height={48} />
+          <img src={logo.url} alt="AdeProm Cleaning Services" className="h-12 w-auto" width={48} height={48} />
         </Link>
         <nav className="hidden lg:flex items-center gap-1">
           {nav.map((n) => (
