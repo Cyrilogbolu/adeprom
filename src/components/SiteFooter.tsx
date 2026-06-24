@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 import logo from "@/assets/adeprom-logo.png.asset.json";
+import { WhatsAppIcon } from "./FloatingWhatsApp";
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -28,6 +29,9 @@ export function SiteFooter() {
             </a>
             <a href="https://www.tiktok.com/@Adepromcleaning" target="_blank" rel="noopener noreferrer" aria-label="TikTok" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
               <TikTokIcon className="h-5 w-5" />
+            </a>
+            <a href="https://wa.link/3ryjwu" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="h-10 w-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center transition-colors">
+              <WhatsAppIcon className="h-5 w-5" />
             </a>
           </div>
         </div>

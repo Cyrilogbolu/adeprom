@@ -1,6 +1,23 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useEffect, useState } from "react";
 import { CheckCircle2, Sparkles, Calendar, Wand2, Smile, MapPin, ArrowRight, Star } from "lucide-react";
 import hero from "@/assets/hero-clean-home.jpg";
+import jobDomestic from "@/assets/service-domestic.jpg";
+import jobCommercial from "@/assets/service-commercial.jpg";
+import jobTenancy from "@/assets/service-tenancy.jpg";
+import jobCarpet from "@/assets/service-carpet.jpg";
+import jobAirbnb from "@/assets/service-airbnb.jpg";
+import jobBuilders from "@/assets/service-builders.jpg";
+
+const heroSlides = [
+  { src: hero, label: "Fresh home clean" },
+  { src: jobDomestic, label: "Recent domestic clean" },
+  { src: jobCommercial, label: "Commercial office clean" },
+  { src: jobTenancy, label: "End of tenancy clean" },
+  { src: jobCarpet, label: "Carpet & upholstery clean" },
+  { src: jobAirbnb, label: "Airbnb turnaround clean" },
+  { src: jobBuilders, label: "After builders clean" },
+];
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -45,6 +62,11 @@ const testimonials = [
 ];
 
 function Home() {
+  const [slide, setSlide] = useState(0);
+  useEffect(() => {
+    const id = setInterval(() => setSlide((s) => (s + 1) % heroSlides.length), 4000);
+    return () => clearInterval(id);
+  }, []);
   return (
     <>
       {/* Hero */}
@@ -72,7 +94,33 @@ function Home() {
           </div>
           <div className="relative">
             <div className="absolute -inset-4 bg-white/20 rounded-3xl blur-2xl" />
-            <img src={hero} alt="Bright, freshly cleaned modern home interior" width={1600} height={1200} className="relative rounded-3xl shadow-2xl w-full h-auto object-cover aspect-[4/3]" />
+            <div className="relative rounded-3xl shadow-2xl overflow-hidden aspect-[4/3]">
+              {heroSlides.map((s, i) => (
+                <img
+                  key={s.src}
+                  src={s.src}
+                  alt={s.label}
+                  width={1600}
+                  height={1200}
+                  className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${i === slide ? "opacity-100" : "opacity-0"}`}
+                />
+              ))}
+              <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+                <span className="px-3 py-1 rounded-full bg-black/40 backdrop-blur-sm text-white text-xs font-medium">
+                  {heroSlides[slide].label}
+                </span>
+                <div className="flex gap-1.5">
+                  {heroSlides.map((_, i) => (
+                    <button
+                      key={i}
+                      onClick={() => setSlide(i)}
+                      aria-label={`Go to slide ${i + 1}`}
+                      className={`h-2 rounded-full transition-all ${i === slide ? "w-6 bg-white" : "w-2 bg-white/50 hover:bg-white/80"}`}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
