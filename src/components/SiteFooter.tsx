@@ -26,7 +26,7 @@ export function SiteFooter() {
           <ul className="mt-4 space-y-3 text-sm text-white/75">
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 shrink-0" /> Motherwell, Scotland</li>
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 mt-0.5 shrink-0" /> <a href="tel:+447570833626" className="hover:text-white">+44 757 083 3626</a></li>
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /> <a href="mailto:Leyedayo@gmail.com" className="hover:text-white">Leyedayo@gmail.com</a></li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 mt-0.5 shrink-0" /> <a href="mailto:support@adeprom.com" className="hover:text-white">support@adeprom.com</a></li>
           </ul>
         </div>
       </div>
