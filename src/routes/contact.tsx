@@ -38,7 +38,7 @@ function Contact() {
           <div className="space-y-5">
             <InfoCard icon={Phone} title="Phone" value="+44 757 083 3626" href="tel:+447570833626" />
             <InfoCard icon={Mail} title="Email" value="support@adeprom.com" href="mailto:support@adeprom.com" />
-            <InfoCard icon={MapPin} title="Location" value="Motherwell, Scotland" />
+            <InfoCard icon={MapPin} title="Location" value="Motherwell, Scotland — available beyond too" />
             <a href="https://wa.me/447570833626" target="_blank" rel="noopener" className="btn-hero w-full sm:w-auto">
               <MessageCircle className="h-5 w-5" /> Chat with us on WhatsApp
             </a>
