@@ -53,7 +53,7 @@ function About() {
             <Eye className="h-8 w-8 text-primary" />
             <h2 className="mt-4 text-2xl font-bold text-brand-deep">Our Vision</h2>
             <p className="mt-3 text-muted-foreground">
-              To become a trusted cleaning brand across Scotland, known for excellence, reliability, and customer satisfaction.
+              To become a trusted cleaning brand across Scotland and beyond, known for excellence, reliability, and customer satisfaction — available for jobs outside Scotland on request.
             </p>
           </div>
         </div>
