@@ -21,7 +21,7 @@ function About() {
           <p className="text-sm font-semibold uppercase tracking-wider text-primary-glow">About Us</p>
           <h1 className="mt-3 text-4xl sm:text-5xl font-extrabold max-w-3xl">About AdeProm</h1>
           <p className="mt-5 text-lg text-white/80 max-w-2xl">
-            A professional cleaning company based in Motherwell, Scotland, delivering reliable and high-quality cleaning services for both residential and commercial clients.
+            A professional cleaning company based in Motherwell, Scotland, delivering reliable and high-quality cleaning services for both residential and commercial clients — and we're happy to take on jobs outside Scotland too.
           </p>
         </div>
       </section>
@@ -53,7 +53,7 @@ function About() {
             <Eye className="h-8 w-8 text-primary" />
             <h2 className="mt-4 text-2xl font-bold text-brand-deep">Our Vision</h2>
             <p className="mt-3 text-muted-foreground">
-              To become a trusted cleaning brand across Scotland, known for excellence, reliability, and customer satisfaction.
+              To become a trusted cleaning brand across Scotland and beyond, known for excellence, reliability, and customer satisfaction — available for jobs outside Scotland on request.
             </p>
           </div>
         </div>
