@@ -10,6 +10,7 @@ const nav = [
   { to: "/gallery", label: "Gallery" },
   { to: "/testimonials", label: "Testimonials" },
   { to: "/faq", label: "FAQ" },
+  { to: "/careers", label: "Careers" },
   { to: "/contact", label: "Contact" },
 ];
 
