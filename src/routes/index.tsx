@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { CheckCircle2, Sparkles, Calendar, Wand2, Smile, MapPin, ArrowRight, Star } from "lucide-react";
+import { CheckCircle2, Sparkles, Calendar, Wand2, Smile, MapPin, ArrowRight, Star, ChevronDown } from "lucide-react";
 import hero from "@/assets/hero-clean-home.jpg";
 import jobDomestic from "@/assets/service-domestic.jpg";
 import jobCommercial from "@/assets/service-commercial.jpg";
@@ -33,11 +33,26 @@ export const Route = createFileRoute("/")({
 });
 
 const reasons = [
-  "Reliable & Professional Team",
-  "Fully Equipped & Trained Staff",
-  "Flexible Scheduling",
-  "Affordable & Transparent Pricing",
-  "Trusted by Homes & Businesses",
+  {
+    title: "Reliable & Professional Team",
+    desc: "Our vetted cleaners turn up on time, in uniform, and ready to deliver consistent results you can count on every visit.",
+  },
+  {
+    title: "Fully Equipped & Trained Staff",
+    desc: "We bring our own commercial-grade equipment and eco-friendly products, and every team member is trained to industry standards.",
+  },
+  {
+    title: "Flexible Scheduling",
+    desc: "One-off, weekly, fortnightly or monthly — we work around your routine, including evenings and weekends where possible.",
+  },
+  {
+    title: "Affordable & Transparent Pricing",
+    desc: "Clear, upfront quotes with no hidden fees. You only pay for the service you book, with options to suit every budget.",
+  },
+  {
+    title: "Trusted by Homes & Businesses",
+    desc: "From private households to offices, landlords and Airbnb hosts, clients across Scotland rely on us for spotless results.",
+  },
 ];
 
 const services = [
@@ -134,10 +149,16 @@ function Home() {
           </div>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {reasons.map((r) => (
-              <div key={r} className="card-elevated p-6">
-                <CheckCircle2 className="h-7 w-7 text-primary" />
-                <p className="mt-3 font-semibold text-brand-deep">{r}</p>
-              </div>
+              <details key={r.title} className="card-elevated p-6 group [&_svg.chev]:open:rotate-180">
+                <summary className="flex items-start justify-between gap-3 cursor-pointer list-none">
+                  <div>
+                    <CheckCircle2 className="h-7 w-7 text-primary" />
+                    <p className="mt-3 font-semibold text-brand-deep">{r.title}</p>
+                  </div>
+                  <ChevronDown className="chev h-5 w-5 text-primary mt-1 transition-transform shrink-0" />
+                </summary>
+                <p className="mt-3 text-sm text-muted-foreground">{r.desc}</p>
+              </details>
             ))}
           </div>
         </div>
