@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Briefcase, CheckCircle2, Heart, Users, Mail, ArrowRight } from "lucide-react";
+import { Briefcase, CheckCircle2, Heart, Users, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/careers")({
   head: () => ({
