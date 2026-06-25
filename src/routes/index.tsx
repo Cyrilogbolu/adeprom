@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import { CheckCircle2, Sparkles, Calendar, Wand2, Smile, MapPin, ArrowRight, Star } from "lucide-react";
+import { CheckCircle2, Sparkles, Calendar, Wand2, Smile, MapPin, ArrowRight, Star, ChevronDown } from "lucide-react";
 import hero from "@/assets/hero-clean-home.jpg";
 import jobDomestic from "@/assets/service-domestic.jpg";
 import jobCommercial from "@/assets/service-commercial.jpg";
