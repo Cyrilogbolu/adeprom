@@ -33,11 +33,26 @@ export const Route = createFileRoute("/")({
 });
 
 const reasons = [
-  "Reliable & Professional Team",
-  "Fully Equipped & Trained Staff",
-  "Flexible Scheduling",
-  "Affordable & Transparent Pricing",
-  "Trusted by Homes & Businesses",
+  {
+    title: "Reliable & Professional Team",
+    desc: "Our vetted cleaners turn up on time, in uniform, and ready to deliver consistent results you can count on every visit.",
+  },
+  {
+    title: "Fully Equipped & Trained Staff",
+    desc: "We bring our own commercial-grade equipment and eco-friendly products, and every team member is trained to industry standards.",
+  },
+  {
+    title: "Flexible Scheduling",
+    desc: "One-off, weekly, fortnightly or monthly — we work around your routine, including evenings and weekends where possible.",
+  },
+  {
+    title: "Affordable & Transparent Pricing",
+    desc: "Clear, upfront quotes with no hidden fees. You only pay for the service you book, with options to suit every budget.",
+  },
+  {
+    title: "Trusted by Homes & Businesses",
+    desc: "From private households to offices, landlords and Airbnb hosts, clients across Scotland rely on us for spotless results.",
+  },
 ];
 
 const services = [
