@@ -13,11 +13,6 @@ export const Route = createFileRoute("/careers")({
   component: Careers,
 });
 
-const openings = [
-  { title: "Domestic Cleaner", type: "Part-time / Full-time", location: "Motherwell & surrounding areas" },
-  { title: "Commercial Cleaner", type: "Part-time / Full-time", location: "Scotland-wide" },
-  { title: "End of Tenancy Specialist", type: "Contract", location: "Scotland-wide" },
-];
 
 const perks = [
   { icon: Heart, title: "Supportive Team", desc: "Work with a friendly, professional team that values you." },
