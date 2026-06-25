@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
-import logo from "@/assets/adeprom-logo.png.asset.json";
+
 import { WhatsAppIcon } from "./FloatingWhatsApp";
 
 function TikTokIcon({ className }: { className?: string }) {
@@ -16,7 +16,7 @@ export function SiteFooter() {
     <footer className="bg-brand-deep text-white mt-20">
       <div className="container-page py-14 grid gap-10 md:grid-cols-4">
         <div className="md:col-span-2">
-          <img src={logo.url} alt="AdeProm Cleaning" className="h-16 w-auto bg-white rounded-lg p-2" width={64} height={64} />
+          <img src="/logo.png" alt="AdeProm Cleaning" className="h-16 w-auto bg-white rounded-lg p-2" width={64} height={64} />
           <p className="mt-4 text-sm text-white/75 max-w-sm">
             Professional residential and commercial cleaning across Motherwell, Scotland and beyond. Spotless results, every time.
           </p>
