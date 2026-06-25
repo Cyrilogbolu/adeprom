@@ -149,10 +149,16 @@ function Home() {
           </div>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {reasons.map((r) => (
-              <div key={r} className="card-elevated p-6">
-                <CheckCircle2 className="h-7 w-7 text-primary" />
-                <p className="mt-3 font-semibold text-brand-deep">{r}</p>
-              </div>
+              <details key={r.title} className="card-elevated p-6 group [&_svg.chev]:open:rotate-180">
+                <summary className="flex items-start justify-between gap-3 cursor-pointer list-none">
+                  <div>
+                    <CheckCircle2 className="h-7 w-7 text-primary" />
+                    <p className="mt-3 font-semibold text-brand-deep">{r.title}</p>
+                  </div>
+                  <ChevronDown className="chev h-5 w-5 text-primary mt-1 transition-transform shrink-0" />
+                </summary>
+                <p className="mt-3 text-sm text-muted-foreground">{r.desc}</p>
+              </details>
             ))}
           </div>
         </div>
