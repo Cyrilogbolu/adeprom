@@ -20,7 +20,7 @@ function Contact() {
     e.preventDefault();
     const fd = new FormData(e.currentTarget);
     const body = `Hi AdeProm,%0A%0AName: ${fd.get("name")}%0AEmail: ${fd.get("email")}%0AMessage: ${fd.get("message")}`;
-    window.location.href = `mailto:support@adeprom.com?subject=Website%20Enquiry&body=${body}`;
+    window.location.href = `mailto:support@adeprom.co.uk?subject=Website%20Enquiry&body=${body}`;
     setSent(true);
   }
   return (
@@ -37,7 +37,7 @@ function Contact() {
         <div className="container-page grid lg:grid-cols-2 gap-10">
           <div className="space-y-5">
             <InfoCard icon={Phone} title="Phone" value="+44 757 083 3626" href="tel:+447570833626" />
-            <InfoCard icon={Mail} title="Email" value="support@adeprom.com" href="mailto:support@adeprom.com" />
+            <InfoCard icon={Mail} title="Email" value="support@adeprom.co.uk" href="mailto:support@adeprom.co.uk" />
             <InfoCard icon={MapPin} title="Location" value="Motherwell, Scotland — available beyond too" />
             <a href="https://wa.me/447570833626" target="_blank" rel="noopener" className="btn-hero w-full sm:w-auto">
               <MessageCircle className="h-5 w-5" /> Chat with us on WhatsApp

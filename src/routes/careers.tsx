@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Briefcase, CheckCircle2, Heart, Users, Mail, ArrowRight } from "lucide-react";
+import { Briefcase, CheckCircle2, Heart, Users, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/careers")({
   head: () => ({
@@ -13,11 +13,6 @@ export const Route = createFileRoute("/careers")({
   component: Careers,
 });
 
-const openings = [
-  { title: "Domestic Cleaner", type: "Part-time / Full-time", location: "Motherwell & surrounding areas" },
-  { title: "Commercial Cleaner", type: "Part-time / Full-time", location: "Scotland-wide" },
-  { title: "End of Tenancy Specialist", type: "Contract", location: "Scotland-wide" },
-];
 
 const perks = [
   { icon: Heart, title: "Supportive Team", desc: "Work with a friendly, professional team that values you." },
@@ -61,27 +56,6 @@ function Careers() {
         </div>
       </section>
 
-      <section className="section-pad" style={{ background: "var(--gradient-soft)" }}>
-        <div className="container-page">
-          <div className="text-center max-w-2xl mx-auto">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary">Open Positions</p>
-            <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-brand-deep">Current Openings</h2>
-          </div>
-          <div className="mt-10 grid md:grid-cols-3 gap-5">
-            {openings.map((o) => (
-              <div key={o.title} className="card-elevated p-7">
-                <Briefcase className="h-6 w-6 text-primary" />
-                <h3 className="mt-4 text-lg font-bold text-brand-deep">{o.title}</h3>
-                <p className="mt-2 text-sm text-muted-foreground">{o.type}</p>
-                <p className="text-sm text-muted-foreground">{o.location}</p>
-                <a href="mailto:support@adeprom.com?subject=Application%20-%20{title}" className="mt-5 inline-flex items-center gap-1 text-primary font-semibold hover:underline">
-                  Apply <ArrowRight className="h-4 w-4" />
-                </a>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="section-pad">
         <div className="container-page">
@@ -90,7 +64,7 @@ function Careers() {
             <p className="mt-3 text-white/85 max-w-xl mx-auto">
               We're always interested in meeting reliable, hard-working cleaners. Send your CV and we'll keep you in mind.
             </p>
-            <a href="mailto:support@adeprom.com?subject=General%20Application" className="btn-hero mt-8 inline-flex">
+            <a href="mailto:support@adeprom.co.uk?subject=General%20Application" className="btn-hero mt-8 inline-flex">
               <Mail className="h-4 w-4" /> Email Your CV
             </a>
             <div className="mt-4">
